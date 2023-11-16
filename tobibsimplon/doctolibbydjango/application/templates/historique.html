@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>Historique des formulaires</title>
+<style>
+    /* Ajoutez ces styles pour positionner la table */
+    .table-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 999; /* Assurez-vous que la table est au-dessus du contenu existant */
+        max-width: 55%; /* Limite la largeur du conteneur */
+        overflow-x: auto; /* Ajoute un défilement horizontal si le contenu dépasse la largeur */
+    }
+</style>
+
+<div class="table-container">
+    <table class="example">
+        <thead>
+            <tr>
+                {% for colonne in champsFormulaireSante %}
+                <th>
+                    {{ colonne }}
+                </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        {% for data in dataFormulaireSante %}
+        <tr>
+            {% for element in data %}
+                <td>{{ element }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+    
+<div class="content-wrapper">
+    <div class="content">
+        <!-- Votre contenu existant ici -->
+    </div>
+</div>
+{% endblock %}

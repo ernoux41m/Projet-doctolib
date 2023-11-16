@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <title>EDA IA</title>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>Bienvenue dans la zone EDA IA {{ prenom }} !</h1>
+
+            {% if rapport_eda %}
+                <script>
+                    window.open("file:///home/matthieu/Formation_IA/Cours_formation_2_année/tobibsimplon/doctolibbydjango/eda_report.html", "_blank");
+                </script>
+            {% else %}
+                <p>Aucun rapport EDA n'est disponible pour le moment.</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
