@@ -1,5 +1,10 @@
 # Projet-doctolib
 
+Vous êtes embauché en tant que consultant Data pour DoctoLib, une entreprise française qui met en relation des  professionnels de la santé et des patients au travers d’une interface web ainsi qu’une application mobile. 
+
+Votre responsable, Mark Musk, veut ajouter de nouvelles fonctionnalités pour attirer encore plus de professionnels de la santé. Il souhaite leur permettre de mener des enquêtes de santé publique sur un échantillon de patients consentants pour arriver à des conclusions qui seront publiées dans des magazines de santé.
+
+## Schéma base de données
 ![68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3439393632343439303031363434303335302f313137343634363032353532353430373737342f64622e73716c697465332e706e673f65783d36353638353935632669733d363535356534356326686d3d623438](https://github.com/ernoux41m/Projet-doctolib/assets/16134455/b5df4037-af29-4513-a5f1-a28ef8121a90)
 
 
